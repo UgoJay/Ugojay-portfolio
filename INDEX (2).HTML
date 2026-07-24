@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akalazu Ugochukwu John | Cloud & Software Engineer</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #131c2e;
+            --border-color: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-cloud: #38bdf8;
+            --accent-software: #34d399;
+            --btn-bg: #1e293b;
+            --btn-hover: #334155;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+        header {
+            padding: 100px 0 60px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 0 0 16px 0;
+            letter-spacing: -0.025em;
+            background: linear-gradient(to right, #ffffff, #94a3b8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .badge-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+        .title-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 16px;
+            border-radius: 9999px;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        .cloud-badge {
+            background: rgba(56, 189, 248, 0.1);
+            color: var(--accent-cloud);
+            border: 1px solid rgba(56, 189, 248, 0.2);
+        }
+        .software-badge {
+            background: rgba(52, 211, 153, 0.1);
+            color: var(--accent-software);
+            border: 1px solid rgba(52, 211, 153, 0.2);
+        }
+        .bio {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 32px;
+            font-size: 1.1rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--btn-bg);
+            color: var(--text-main);
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            border: 1px solid var(--border-color);
+            transition: background-color 0.2s, border-color 0.2s;
+        }
+        .social-btn:hover {
+            background-color: var(--btn-hover);
+            border-color: #475569;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin: 0 0 32px 0;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 40px;
+            height: 3px;
+            background-color: var(--accent-cloud);
+            border-radius: 2px;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+        .skills-card {
+            background: var(--card-bg);
+            padding: 28px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+        .skills-card h3 {
+            margin: 0 0 12px 0;
+            font-size: 1.25rem;
+            color: var(--text-main);
+        }
+        .skills-card p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 24px;
+        }
+        .project-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 32px;
+            border: 1px solid var(--border-color);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .project-card:hover {
+            transform: translateY(-4px);
+            border-color: #334155;
+        }
+        .project-card h3 {
+            margin: 0 0 12px 0;
+            font-size: 1.35rem;
+        }
+        .project-card p {
+            margin: 0 0 24px 0;
